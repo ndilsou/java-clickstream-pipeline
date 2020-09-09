@@ -1,0 +1,17 @@
+### Health Checks
+
+http://0.0.0.0:8080/health
+
+
+### Send Events
+
+POST http://0.0.0.0:8080/events
+Content-Type: application/json
+
+{
+    "namespace": "test",
+    "metric": "interaction"
+}
+
+
+
