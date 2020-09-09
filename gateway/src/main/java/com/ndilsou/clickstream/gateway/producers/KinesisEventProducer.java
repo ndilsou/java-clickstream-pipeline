@@ -64,7 +64,7 @@ public class KinesisEventProducer implements EventProducer {
   }
 
   private String getEventPartition(Event event) {
-    return String.format("%s:%s", event.namespace, event.metric);
+    return String.format("%s:%s", event.getNamespace(), event.getMetric());
 
   }
 }
